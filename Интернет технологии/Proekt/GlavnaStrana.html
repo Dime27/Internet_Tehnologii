@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ime</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/GlavnaCSS.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center">
+                        <img src="img/profile.jpg" id="profile"><br>
+                        <a id="changePhoto" href="#modalPhoto" data-toggle="modal">Change Photo</a>
+                    </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <p id="displayName">Display Name</p>>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                <ul class="nav navbar-nav navbar-right list-inline">
+                        <li><a id="signOut" href="#">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 sectionRow">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading text-center">Write a new post</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left marginPost">
+                                <img src="img/profile.jpg" class="imgPost">
+                                <h4 style="display: inline-block; margin-left: 10px; margin-top: 1px;">Display Name</h4>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left">
+                                <textarea id="textPost" rows="5" placeholder="Let people know what you have to say..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer text-right">
+                        <button type="submit" class="btn btn-success" id="btnPost">Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left marginPost">
+                                <img src="img/profile.jpg" class="imgPost">
+                                <h4 style="display: inline-block; margin-left: 10px; margin-top: 1px;">Display Name</h4>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left">
+                                <p class="paragrafPost">Some post</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button type="button" class="btn btn-info btnLikes">
+                            <span class="fa fa-thumbs-up"></span>&nbsp; &nbsp;
+                            <label>22</label>
+                        </button>
+
+                        <button type="button" class="btn btn-danger btnLikes">
+                            <span class="fa fa-thumbs-down"></span>&nbsp; &nbsp;
+                            <label>22</label>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left marginPost">
+                                <img src="img/profile.jpg" class="imgPost">
+                                <h4 style="display: inline-block; margin-left: 10px; margin-top: 1px;">Display Name</h4>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left">
+                                <p class="paragrafPost">Some post</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button type="button" class="btn btn-info btnLikes">
+                            <span class="fa fa-thumbs-up"></span>&nbsp; &nbsp;
+                            <label>22</label>
+                        </button>
+
+                        <button type="button" class="btn btn-danger btnLikes">
+                            <span class="fa fa-thumbs-down"></span>&nbsp; &nbsp;
+                            <label>22</label>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left marginPost">
+                                <img src="img/profile.jpg" class="imgPost">
+                                <h4 style="display: inline-block; margin-left: 10px; margin-top: 1px;">Display Name</h4>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left">
+                                <p class="paragrafPost">Some post</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button type="button" class="btn btn-info btnLikes">
+                            <span class="fa fa-thumbs-up"></span>&nbsp; &nbsp;
+                            <label>22</label>
+                        </button>
+
+                        <button type="button" class="btn btn-danger btnLikes">
+                            <span class="fa fa-thumbs-down"></span>&nbsp; &nbsp;
+                            <label>22</label>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Content -->
+    <div class="portfolio-modal modal fade container" id="modalPhoto">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr"><div class="rl"></div></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Change Your Photo</h2>
+                            <hr class="star-primary">
+                            <img id="slikaModal" src="img/profile.jpg" class="img-responsive">
+                            <button class="btn btn-info btn-file">
+                                <span class="fa fa-upload"></span> &nbsp; Choose from files<input type="file">
+                            </button>
+                            <button type="submit" class="btn btn-success" data-dismiss="modal">
+                                <span class="fa fa-check"></span> Save
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/portfolio.js"></script>
+
+    <script>
+        /*Change Photo Text*/
+        $('nav').hover(function(){
+            $('#changePhoto').show();
+        }, function(){
+            $('#changePhoto').hide();
+        })
+    </script>
+</body>
+</html>
